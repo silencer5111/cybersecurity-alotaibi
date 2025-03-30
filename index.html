@@ -1,113 +1,182 @@
 <!DOCTYPE html>
-<html dir="rtl">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>متجر أدوات الأمن السيبراني</title>
+    <title>Cybersecurity Tools Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
+            background-color: #f8f9fa;
+            color: #2d3436;
         }
         .header {
-            background-color: #1a237e;
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
+            gap: 30px;
+            padding: 20px 0;
         }
         .product-card {
             background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
         }
         .product-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
         .product-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            border-radius: 5px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .product-card h2 {
+            color: #1a237e;
+            margin: 0 0 10px;
+            font-size: 1.4em;
+            font-weight: 600;
         }
         .price {
             color: #1a237e;
-            font-size: 1.2em;
-            font-weight: bold;
+            font-size: 1.4em;
+            font-weight: 600;
+            margin: 15px 0;
         }
         .buy-button {
-            background-color: #1a237e;
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 8px;
             cursor: pointer;
             width: 100%;
-            margin-top: 10px;
+            margin-top: 15px;
             text-decoration: none;
             display: block;
             text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
         }
         .buy-button:hover {
-            background-color: #283593;
+            background: linear-gradient(135deg, #283593 0%, #1a237e 100%);
+            transform: translateY(-2px);
         }
         .description {
-            color: #666;
+            color: #636e72;
             margin: 10px 0;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        .features {
+            margin: 15px 0;
+            padding: 0;
+            list-style: none;
+        }
+        .features li {
+            color: #636e72;
+            margin: 8px 0;
+            padding-right: 25px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            color: #1a237e;
+            position: absolute;
+            right: 0;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>متجر أدوات الأمن السيبراني</h1>
-        <p>أدوات موثوقة لحماية أنظمتك</p>
+        <h1>Cybersecurity Tools Store</h1>
+        <p>Professional Security Solutions for Your Systems</p>
     </div>
 
     <div class="container">
         <div class="products">
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200" alt="برنامج مكافحة الفيروسات" class="product-image">
-                <h2>برنامج مكافحة الفيروسات المتقدم</h2>
-                <p class="description">حماية شاملة من الفيروسات والبرمجيات الخبيثة</p>
+                <img src="https://via.placeholder.com/300x200" alt="Antivirus Software" class="product-image">
+                <h2>Advanced Antivirus Software</h2>
+                <p class="description">Comprehensive protection against viruses and malware</p>
+                <ul class="features">
+                    <li>Real-time protection</li>
+                    <li>Advanced threat detection</li>
+                    <li>System optimization</li>
+                    <li>24/7 support</li>
+                </ul>
                 <p class="price">$49.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=برنامج مكافحة الفيروسات&price=49.99&currency=USD" class="buy-button">شراء الآن</a>
+                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Antivirus Software&price=49.99&currency=USD" class="buy-button">Buy Now</a>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200" alt="جدار الحماية" class="product-image">
-                <h2>جدار الحماية الذكي</h2>
-                <p class="description">حماية متقدمة من الهجمات الإلكترونية</p>
+                <img src="https://via.placeholder.com/300x200" alt="Firewall" class="product-image">
+                <h2>Smart Firewall</h2>
+                <p class="description">Advanced protection against cyber attacks</p>
+                <ul class="features">
+                    <li>Network monitoring</li>
+                    <li>Intrusion prevention</li>
+                    <li>Application control</li>
+                    <li>Traffic filtering</li>
+                </ul>
                 <p class="price">$39.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=جدار الحماية&price=39.99&currency=USD" class="buy-button">شراء الآن</a>
+                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Firewall&price=39.99&currency=USD" class="buy-button">Buy Now</a>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200" alt="مدير كلمات المرور" class="product-image">
-                <h2>مدير كلمات المرور الآمن</h2>
-                <p class="description">تخزين وإدارة كلمات المرور بشكل آمن</p>
+                <img src="https://via.placeholder.com/300x200" alt="Password Manager" class="product-image">
+                <h2>Secure Password Manager</h2>
+                <p class="description">Secure storage and management of your passwords</p>
+                <ul class="features">
+                    <li>Password generation</li>
+                    <li>Secure vault</li>
+                    <li>Auto-fill capability</li>
+                    <li>Cross-platform sync</li>
+                </ul>
                 <p class="price">$29.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=مدير كلمات المرور&price=29.99&currency=USD" class="buy-button">شراء الآن</a>
+                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Password Manager&price=29.99&currency=USD" class="buy-button">Buy Now</a>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200" alt="برنامج النسخ الاحتياطي" class="product-image">
-                <h2>برنامج النسخ الاحتياطي التلقائي</h2>
-                <p class="description">نسخ احتياطي آمن لملفاتك المهمة</p>
+                <img src="https://via.placeholder.com/300x200" alt="Backup Software" class="product-image">
+                <h2>Automatic Backup Solution</h2>
+                <p class="description">Secure backup for your important files</p>
+                <ul class="features">
+                    <li>Cloud storage</li>
+                    <li>Schedule backups</li>
+                    <li>File encryption</li>
+                    <li>Easy restoration</li>
+                </ul>
                 <p class="price">$34.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=برنامج النسخ الاحتياطي&price=34.99&currency=USD" class="buy-button">شراء الآن</a>
+                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Backup Software&price=34.99&currency=USD" class="buy-button">Buy Now</a>
             </div>
         </div>
     </div>

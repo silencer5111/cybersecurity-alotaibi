@@ -114,6 +114,17 @@
             right: 0;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buyButtons = document.querySelectorAll('.buy-button');
+            buyButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    window.location.href = 'message.html';
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -134,7 +145,7 @@
                     <li>24/7 support</li>
                 </ul>
                 <p class="price">$49.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Antivirus Software&price=49.99&currency=USD" class="buy-button">Buy Now</a>
+                <a href="#" class="buy-button">Buy Now</a>
             </div>
 
             <div class="product-card">
@@ -148,7 +159,7 @@
                     <li>Traffic filtering</li>
                 </ul>
                 <p class="price">$39.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Firewall&price=39.99&currency=USD" class="buy-button">Buy Now</a>
+                <a href="#" class="buy-button">Buy Now</a>
             </div>
 
             <div class="product-card">
@@ -162,7 +173,7 @@
                     <li>Cross-platform sync</li>
                 </ul>
                 <p class="price">$29.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Password Manager&price=29.99&currency=USD" class="buy-button">Buy Now</a>
+                <a href="#" class="buy-button">Buy Now</a>
             </div>
 
             <div class="product-card">
@@ -176,7 +187,7 @@
                     <li>Easy restoration</li>
                 </ul>
                 <p class="price">$34.99</p>
-                <a href="https://bitpay.com/checkout?action=checkout&merchant=1234567890&item=Backup Software&price=34.99&currency=USD" class="buy-button">Buy Now</a>
+                <a href="#" class="buy-button">Buy Now</a>
             </div>
         </div>
     </div>
